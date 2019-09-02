@@ -20,6 +20,7 @@ class CashRegister
       return "After the discount, the total comes to $800."
     else 
       return "There is no discount to apply."
+    end 
   end 
   
   def items 
