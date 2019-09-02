@@ -7,11 +7,10 @@ class CashRegister
   def initialize(discount=nil)
     @total = 0
     @discount = discount
-    @@all << self 
   end
   
   def add_item(title, price, quantity=1)
-    @@all << self 
+    @@all << title  
     @total += (price * quantity)
   end 
   
@@ -25,7 +24,7 @@ class CashRegister
   end 
   
   def items 
-    self.all.each { |item| item.title }
+    @@all 
   end 
   
   def void_last_transaction
