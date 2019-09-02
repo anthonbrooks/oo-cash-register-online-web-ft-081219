@@ -24,7 +24,7 @@ class CashRegister
   end 
   
   def items 
-    @@all 
+    self.all.each { |item| item.title }
   end 
   
   def void_last_transaction
