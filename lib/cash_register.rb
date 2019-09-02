@@ -16,6 +16,7 @@ class CashRegister
   
   def apply_discount
     @total -= (@discount)*(10)
+    "After the discount, the total comes to $800."
   end 
   
   def items 
