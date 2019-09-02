@@ -4,7 +4,7 @@ class CashRegister
   
   @@all = []
   
-  def initialize(discount=nil)
+  def initialize(discount=0)
     @total = 0
     @discount = discount
     @@all << self 
